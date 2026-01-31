@@ -17,7 +17,9 @@ export const matchIdParamSchema = z.object({
 const isIsoDate = (val) => {
   if (typeof val !== "string") return false;
   const d = new Date(val);
-  return !isNaN(d.getTime()) && d.toISOString() === val;
+  return (
+    !isNaN(d.getTime()) && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/.test(val)
+  );
 };
 
 export const createMatchSchema = z
