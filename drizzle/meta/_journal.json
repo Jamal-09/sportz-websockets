@@ -8,6 +8,13 @@
       "when": 1769893635733,
       "tag": "0000_thick_bullseye",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1769941003335,
+      "tag": "0001_moaning_shiver_man",
+      "breakpoints": true
     }
   ]
 }
